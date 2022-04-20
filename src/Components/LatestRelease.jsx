@@ -13,7 +13,7 @@ const styles = {
     cursor: "pointer",
     },
     card: {
-        height: "780px",
+        height: "850px",
         width: "400px"
     },
     buttonAndCategory: {
@@ -27,6 +27,15 @@ const styles = {
         flexDirection: "column",
         flex: "1"
     },
+    price: {
+        fontFamily: "monospace",
+    },
+    priceAsin: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "baseline"
+    }
 
 }
 
@@ -42,16 +51,20 @@ class LatestRelease extends Component {
                     <Card.Img variant="top" src={book.img} className="card-images" style={styles.images} />
                     <Card.Body style={styles.cardBody}>
                     <div>
-                    
                       <Card.Title>{book.title}</Card.Title>
-                      
+                     </div>
+                     <div style={styles.priceAsin}>
+                     <p>ASIN: {book.asin}</p>
+                     <Badge pill variant="secondary">
+                      {book.category.toUpperCase()}
+                    </Badge>{' '}   
+
                      </div>
                      <div style={styles.buttonAndCategory}>
                       <Button variant="success">BUY NOW</Button>
                       
-                      <Badge pill variant="secondary">
-                      {book.category.toUpperCase()}
-                    </Badge>{' '}
+
+                    <p style={styles.price}>Only: ${book.price}</p>
                       </div>
                     
                     </Card.Body>
