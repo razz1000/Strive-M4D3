@@ -46,7 +46,7 @@ class LatestRelease extends Component {
             <Container fluid>
             <Row>
                 {books.map((book) => (
-                  <Col>
+                  <Col key={book.asin}>
                   <Card style={styles.card}>
                     <Card.Img variant="top" src={book.img} className="card-images" style={styles.images} />
                     <Card.Body style={styles.cardBody}>
