@@ -1,0 +1,9 @@
+
+
+const stylesheet = () => (
+card-images {
+    background-color: red;
+}
+)
+
+export default stylesheet

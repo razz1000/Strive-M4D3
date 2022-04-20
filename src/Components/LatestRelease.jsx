@@ -1,30 +1,31 @@
 import { Component } from "react";
 import books from "../data/fantasy.json"
-import {Container, Row, Col, Card, Button} from 'react-bootstrap'
-import "../stylesheet.css"
+import {Container, Row, Col, Card, Button, Badge} from 'react-bootstrap'
+
 
 const styles = {
-    images: {
-    
+    images: {    
     objectFit: "cover",
     height: "600px",
     marginRight: "auto",
     marginTop: "0",
-    paddingTop: "0"
+    paddingTop: "0",
+    cursor: "pointer",
     },
     card: {
-        height: "800px",
+        height: "780px",
         width: "400px"
     },
     buttonAndCategory: {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "baseline",
+        marginTop: "auto"
     },
         cardBody: {
         display: "flex",
         flexDirection: "column",
-        rowGap: "40px"
+        flex: "1"
     },
 
 }
@@ -47,9 +48,10 @@ class LatestRelease extends Component {
                      </div>
                      <div style={styles.buttonAndCategory}>
                       <Button variant="success">BUY NOW</Button>
-                      <Card.Text>
-                        {book.category.toUpperCase()}
-                          </Card.Text>
+                      
+                      <Badge pill variant="secondary">
+                      {book.category.toUpperCase()}
+                    </Badge>{' '}
                       </div>
                     
                     </Card.Body>
