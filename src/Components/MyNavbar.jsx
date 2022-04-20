@@ -4,16 +4,16 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 let MyNavbar = () => { 
 return ( 
   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home">StriveBooks</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+      <Nav.Link href="#features">Home</Nav.Link>
+      <Nav.Link href="#pricing">About</Nav.Link>
+      <NavDropdown title="Browse" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Something 1</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Something 2</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something 3</NavDropdown.Item>
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
