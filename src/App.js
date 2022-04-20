@@ -7,6 +7,7 @@ import MyNavbar from "./Components/MyNavbar";
 import MyCarousel from "./Components/MyCarousel";
 import MyFooter from "./Components/MyFooter";
 import Welcome from "./Components/Welcome";
+import LatestRelease from "./Components/LatestRelease";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Welcome />
       </div>
       <div>
-        <MyCarousel />
+        <LatestRelease />
       </div>
       <MyFooter />
     </div>
